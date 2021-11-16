@@ -11,13 +11,13 @@
 - JS 내장 모듈로 한 번에 한 줄씩 Readalbe 스티림 (ex:process.stdin)에서 데이터를 읽기 위한 인터페이스를 제공하며 readline 모듈에 엑세스할 수 있다.
   - 매개변수 line이 입력 값으로 할당된다. (String)
 
-```
+```js
   const readline = require('readline');
 ```
 
 readline.interface는 `readline.createInterface()` 메서드를 통해 생성하며 아래와 같이 사용한다.
 
-```
+```js
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -36,10 +36,10 @@ const rl = readline.createInterface({
 
 - `fs.readFileSync(filename, [options])` 위와 달리 **동기적 읽기 방식**으로 테스트 케이스 파일을 읽는데 주로 사용할 것이다.
 
-```
+```js
 const fs = require("fs);
 
-cosnt input = fs.readFileSync("/dev/stdin");
+const input = fs.readFileSync("/dev/stdin");
 ```
 
-보통 위와 같은 형태로 입력값을 받아오며 문제에 따라서 입력받는 값을 정재해서 사용행한다.
+보통 위와 같은 형태로 입력값을 받아오며 문제에 따라서 입력받는 값을 알맞게 고쳐서 사용한다.

@@ -12,13 +12,13 @@
   - 매개변수 line이 입력 값으로 할당된다. (String)
 
 ```js
-  const readline = require('readline');
+const readline = require("readline");
 ```
 
 readline.interface는 `readline.createInterface()` 메서드를 통해 생성하며 아래와 같이 사용한다.
 
 ```js
-const readline = require('readline');
+const readline = require("readline");
 
 const rl = readline.createInterface({
   input: process.stdin,

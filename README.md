@@ -11,7 +11,7 @@
 - JS 내장 모듈로 한 번에 한 줄씩 Readalbe 스티림 (ex:process.stdin)에서 데이터를 읽기 위한 인터페이스를 제공하며 readline 모듈에 엑세스할 수 있다.
   - 매개변수 line이 입력 값으로 할당된다. (String)
 
-```
+```js
   const readline = require('readline');
 ```
 

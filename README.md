@@ -17,7 +17,7 @@
 
 readline.interface는 `readline.createInterface()` 메서드를 통해 생성하며 아래와 같이 사용한다.
 
-```
+```js
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -36,7 +36,7 @@ const rl = readline.createInterface({
 
 - `fs.readFileSync(filename, [options])` 위와 달리 **동기적 읽기 방식**으로 테스트 케이스 파일을 읽는데 주로 사용할 것이다.
 
-```
+```js
 const fs = require("fs);
 
 cosnt input = fs.readFileSync("/dev/stdin");

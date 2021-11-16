@@ -39,7 +39,7 @@ const rl = readline.createInterface({
 ```js
 const fs = require("fs);
 
-cosnt input = fs.readFileSync("/dev/stdin");
+const input = fs.readFileSync("/dev/stdin");
 ```
 
 보통 위와 같은 형태로 입력값을 받아오며 문제에 따라서 입력받는 값을 정재해서 사용행한다.

@@ -3,4 +3,3 @@ let [n, ...arr] = require('fs').readFileSync('../example.txt').toString().trim()
 arr = arr.map(Number).sort((a, b) => a - b);
 
 console.log(arr[0], arr[arr.length - 1]);
-

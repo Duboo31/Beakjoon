@@ -9,4 +9,4 @@ for(let i=0; i<len; i++) {
     answer += alpha[str[i].charCodeAt() - 65]; 
 }
 
-console.log(answer); 
+console.log(answer);

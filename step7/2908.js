@@ -3,3 +3,7 @@ a = a.split('').reverse().join('');
 b = b.split('').reverse().join('');
 
 console.log(+a > +b ? a : b);
+
+
+
+

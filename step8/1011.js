@@ -1,20 +1,17 @@
-let [n, ...arr] = require('fs').readFileSync('../example.txt').toString().split('\n');
+let [n, ...arr] = require('fs').readFileSync('../example.txt').toString().trim().split('\n');
 
-arr = arr.map(el => el.split(' ').map(Number).reduce((acc, cur) => (cur - acc)));
+for (let i = 0; i < +n; i++) {
+  let [a, b] = arr[i].split(' ');
+  let len = +b - +a;
 
-let cnt = 0;
+  let sqrtN = Math.floor(Math.sqrt(len));
 
-for(let i=0; i<+n; i++) {
-    while(true) {
-        if(arr[i] <= Math.pow(cnt, 2) + 1) {
-            break;
-        } else {
-            cnt += 1;
-        }
-    }
-    if(arr[i] <= Math.pow(cnt, 2)) {
-        console.log(cnt * 2 - 1);
-    } else {
-        console.log(cnt * 2);
-    }
+  let cnt = (sqrtN * 2) - 1;
+
+  let remainLen = len - sqrtN * sqrtN;
+
+  if (remainLen !== 0) {
+    remainLen <= sqrtN ? cnt += 1 : cnt += 2; 
+  }
+  console.log(cnt);
 }
